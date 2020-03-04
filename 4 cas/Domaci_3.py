@@ -7,6 +7,11 @@ proizvod = 1
 for i in range(n):
     unos = int(input("Unesite {}. element liste:".format(i+1)))
     lista_brojeva.append(unos)
-    if lista_brojeva.index(unos)%2 != 0:
-        proizvod = proizvod * unos
+print(lista_brojeva)
+neparni = lista_brojeva[1::2]
+print(neparni)
+
+for i in range(len(neparni)):
+    proizvod = proizvod * neparni[i]
+    
 print("Proizvod elemenata  na neparnim pozicijama je {}.".format(proizvod))
